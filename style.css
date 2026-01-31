@@ -19,6 +19,9 @@ height: 100%;
 font-size: 1.6rem;
 /* same as 16px using 62.5% fix for rem */
 line-height: 1.6;
+
+overflow-x: hidden; /* Hides horizontal overflow */
+max-width: 100%;    /* Ensures elements don't exceed viewport width */
 }
 
 /* ----- BODY ----- */
@@ -26,4 +29,8 @@ body {
 background: rgb(255, 255, 255);
 margin: 0;
 font-family: 'Open Sans', sans-serif;
+}
+
+.blog-container {
+  font-size: 1vw;
 }
