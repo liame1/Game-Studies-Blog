@@ -1,27 +1,14 @@
 /* ----- FIXES!! ----- */
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
 }
 
 *,
 *:before,
 *:after {
-box-sizing: inherit;
 margin: 0;
 padding: 0;
-}
-
-html, 
-body {
-height: 100%;
-font-size: 1.6rem;
-/* same as 16px using 62.5% fix for rem */
-line-height: 1.6;
-
-overflow-x: hidden; /* Hides horizontal overflow */
-max-width: 100%;    /* Ensures elements don't exceed viewport width */
 }
 
 /* ----- BODY ----- */
@@ -29,8 +16,29 @@ body {
 background: rgb(255, 255, 255);
 margin: 0;
 font-family: 'Open Sans', sans-serif;
+
+max-width: 100%;
+font-size: 1vw;
+margin: 2%;
+
 }
 
+/* ----- Classes ----- */
+section {
+  
+}
+
+/* pre {
+  white-space: pre-wrap;
+  
+} */
+
 .blog-container {
-  font-size: 1vw;
+  white-space: pre-wrap;
+  font-family: monospace;
+  display: block; /* <pre> is a block-level element by default */
+  overflow-wrap: break-word;
+
+  margin-left: -1%;
+  
 }
